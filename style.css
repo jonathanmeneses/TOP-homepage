@@ -3,8 +3,14 @@
 .project {}
 
 .top {
+    display: grid;
+    place-items: center;
     padding: 0 5%;
+    background-color: teal;
+    border-bottom-left-radius: 5% 5%;
+    /* border-bottom-right-radius: 50% 20%; */
 }
+
 
 .photo-overlay img {
     display: block;
@@ -39,6 +45,9 @@
 }
 
 .top-container {
+    max-width: 1000px;
+    align-self: center;
+    justify-self: center;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -46,6 +55,9 @@
 
 .about-me-container {
     padding: 2% 5%;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 body {
