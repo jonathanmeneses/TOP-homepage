@@ -137,7 +137,7 @@ p {
     gap: 10px;
 }
 
-.icons-container {
+.icons-container--bottom {
     display: flex;
     align-self: start;
     gap: 10px;
