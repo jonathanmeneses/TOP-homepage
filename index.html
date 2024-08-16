@@ -19,8 +19,11 @@
         <div class="top">
             <div class="top-container">
                 <div class="photo-overlay">
-                    <img class="photo" src="img/jonathan-tower.jpeg"
-                        alt="jonathan meneses and his partner in front of the Eiffel Tower">
+                    <picture>
+                        <source srcset="img/jonathan-tower-small.jpeg" media="(max-width: 1000px)">
+                        <img class="photo" src="img/jonathan-tower.jpeg"
+                            alt="jonathan meneses and his partner in front of the Eiffel Tower">
+                    </picture>
                     <div class="overlay-text">Jonathan Meneses</div>
                 </div>
                 <div class="about-me-container">
@@ -32,8 +35,10 @@
                         cupiditate
                         quia vel fuga ipsum inventore id sunt distinctio tenetur.</p>
                     <div class="icons-container">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                            width="20px" />
+                        <a href="https://github.com/jonathanmeneses" target="_blank">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                width="20px" />
+                        </a>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
                             width="20px" />
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
@@ -144,15 +149,36 @@
             </div>
         </div>
         <div class="bottom">
-            <div class="contact-me-card">
-                <h3 class="text-cta">
-                    Contact Me
-                </h3>
-                <p class="text-cta">
-                </p>
+            <div class="contact-me-section">
+                <div class="contact-me-card">
+                    <h3 class="cta">
+                        Contact Me
+                    </h3>
+                    <p class="cta-text">
+                        I'm always looking to learn and grow. Please reachout if you want to learn more about what I'm
+                        up
+                        to!
+                    </p>
+
+                    <div class="contact-info">
+                        <img src="assets/email-outline.svg" alt="" width="15px">
+                        <a href="mailto:jonathan.m.meneses@gmail.com">jonathan.m.meneses@gmail.com</a>
+                    </div>
+                    <div class="icons-container--bottom">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                            width="20px" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+                            width="20px" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+                            width="20px" />
+                    </div>
+                </div>
+
+                <img class="contact-photo" src="img/contact-me.jpeg" alt="jonathan meneses smiling outside">
             </div>
-            <img class="photo" src="img/contact-me.jpeg" alt="jonathan meneses smiling outside">
         </div>
+
+    </div>
     </div>
 
 
