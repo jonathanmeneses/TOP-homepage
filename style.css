@@ -18,7 +18,7 @@ p {
 /* Layout Containers */
 .main {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     align-content: center;
 }
@@ -178,23 +178,29 @@ p {
 }
 
 
-@media (max-width: 500px) {}
 
 @media (max-width: 1000px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
         max-width: 750px;
     }
+}
+
+@media (max-width: 575px) {
+
+    .projects {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
 
     .top-container {
         grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
+        grid-auto-rows: auto;
+
     }
 
-    .photo {
-        /* max-height: 350px; */
-        max-width: 30%;
-        height: auto;
+    .contact-me-section {
+        flex-direction: column;
+        gap: 1em;
     }
 }
